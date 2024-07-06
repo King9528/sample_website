@@ -1,0 +1,199 @@
+* {
+  top: 0;
+  left: 0;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  z-index: 10;
+}
+.navbar ::before {
+  content: "";
+  background-color: grey;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.navbar img {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: 10px;
+  @keyframes example {
+    from { background-color: red; }
+    to { background-color: yellow; }
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 11px 34px;
+  padding: 10px 10px;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 110px 5px;
+  height: 180px;
+  text-shadow: 2px;
+}
+#home::before {
+  content: " ";
+  background: url("bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
+#home h2 {
+  color: white;
+}
+
+.btn {
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+  background-color: antiquewhite;
+}
+#home .btn:hover {
+  background-color: brown;
+  color: black;
+  cursor: pointer;
+}
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services h2 {
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+#container {
+  display: flex;
+}
+#container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  margin: 5px 5px;
+  border-radius: 15px;
+  background-color: rgb(244, 231, 231);
+}
+#container .box img {
+  margin: 10px 10px;
+  width: 360px;
+}
+#container .box p {
+  color: black;
+}
+#client {
+  margin-top: 40px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#client::before {
+  content: " ";
+  background: url("bg3.jpg");
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+}
+#client .img-container {
+  display: flex;
+}
+#client img {
+  width: 184px;
+  margin: 20px;
+  border-radius: 20px;
+}
+#client h2 {
+  color: white;
+  margin-top: 53px;
+  margin-bottom: 25px;
+}
+.h-primary {
+  font-size: 2rem;
+}
+.h-secondary {
+  display: flex;
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 490px;
+}
+#contacts ::before {
+  content: "";
+  background: url("bg2.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.07;
+}
+#contacts .box {
+  margin: 25px 10px;
+  font-size: 25px;
+}
+#contacts input {
+  font-size: 25px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+  

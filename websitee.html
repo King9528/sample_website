@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:1180px)" href="phone.css">
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="img">
+        <img src="logo.jpg" alt="Food delivery app" />
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#client">Client</a></li>
+        <li><a href="#contacts">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h2 class="h-primary">Welcome to our Food Delivery app</h2>
+      <p class="h-secondary">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+        voluptate odit consequuntur? Quisquam facere explicabo iusto asperiores
+        atque perspiciatis consequuntur consectetur, aspernatur odit? Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Sed,pariatur quas
+        doloribu aliquam perspiciatis accusamus,praesentium nobis ducimus
+        nesciunt ea ex aspernatur!
+      </p>
+      <button class="btn">Order now</button>
+    </section>
+    <section id="services">
+      <h2 class="h-primary">Our Services</h2>
+      <div id="container">
+        <div class="box">
+          <img src="img1.jpg" alt="Food ordering" />
+          <h3>Food Ordering</h3>
+          <p class="h-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            sapiente!
+          </p>
+        </div>
+        <div class="box">
+          <img src="img2.jpg" alt="Food ordering" />
+          <h3>Drinks Ordering</h3>
+          <p class="h-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            sapiente!
+          </p>
+        </div>
+        <div class="box">
+          <img src="img3.jpg" alt="Food ordering" />
+          <h3>Food Delivery</h3>
+          <p class="h-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            sapiente!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client">
+      <h2 class="h-primary">Our Clients</h2>
+      <div class="img-container">
+        <img src="client1.jpg" alt="" />
+        <img src="client2.jpg" alt="" />
+        <img src="client3.jpg" alt="" />
+        <img src="client4.jpg" alt="" />
+        <img src="client5.png" alt="" />
+      </div>
+    </section>
+    <section id="contacts">
+      <h2 class="h-primary">Contact us</h2>
+      <form action="noaction.php" class="form-grp">
+        <div class="box">
+          <label for="name">Name</label>
+          <input type="name" placeholder="Enter your name" required />
+        </div>
+        <div class="box">
+          <label for="phone">Phone</label>
+          <input type="phone" placeholder="Enter your phone no." required />
+        </div>
+        <div class="box">
+          <label for="email">Email Id</label>
+          <input type="email" placeholder="Enter your email id" required />
+        </div>
+        <div class="box">
+          <label for="query">Query</label>
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn" id="submitBtn" onclick="form.reset()">Submit</button>
+      </form>
+    </section>
+    <footer>Copyright &copy; All rights reserved</footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Wait for the DOM to be fully loaded
+        var submitButton = document.getElementById('submitBtn');
+  
+        submitButton.addEventListener('click', function(event) {
+          // Prevent the default form submission
+          event.preventDefault();
+  
+          // Show an alert when the submit button is clicked
+          alert('Your form submitted successfully');
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
